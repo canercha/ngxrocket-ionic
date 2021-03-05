@@ -1,0 +1,19 @@
+//
+// Custom opacity helpers
+//
+
+@for $opacity from 1 through 100 {
+	.opacity-#{$opacity} {
+		opacity: $opacity / 100 !important;
+	}
+
+	.hover-opacity-#{$opacity} {
+		transition: $transition;
+
+		&.active,
+		&:hover {
+			transition: $transition;
+			opacity: $opacity / 100 !important;
+		}
+	}
+}

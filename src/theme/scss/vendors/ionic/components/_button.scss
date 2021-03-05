@@ -1,0 +1,29 @@
+//
+// Button
+//
+
+button,
+input[type="email"],
+input[type="tel"],
+input[type="text"],
+input[type="password"],
+input[type="image"],
+input[type="submit"],
+input[type="button"],
+input[type="search"],
+textarea {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+ion-button {
+  border-radius: $border-radius;
+  font-size: $finger-size-base;
+  font-weight: 300;
+  height: 3em;
+  outline: none;
+  text-transform: inherit;
+  --box-shadow: none;
+}

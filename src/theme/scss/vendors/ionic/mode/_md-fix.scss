@@ -1,0 +1,66 @@
+// Fix: "Remove the ionic default effects from the HTML"
+[mode="md"],
+.md {
+
+  ion-item[appearance="outline"] {
+    ion-label {
+      transform: translate3d(0, 1.5em, 0) !important;
+    }
+
+    ion-input {
+      input {
+        padding: 1rem 0 !important;
+      }
+    }
+
+    ion-select,
+    ion-datetime {
+      padding: 1rem 0 !important;
+    }
+
+    &.item-has-focus {
+      ion-label {
+        transform: translate3d(0, .75em, 0) scale(0.82) !important;
+      }
+    }
+
+    &.item-has-value {
+      ion-label {
+        transform: translate3d(0, .75em, 0) scale(0.82) !important;
+      }
+    }
+  }
+
+  ion-toolbar {
+    ion-buttons[slot="start"] {
+      &~ion-title {
+        padding-inline-start: 0rem;
+      }
+    }
+
+    ion-title {
+      padding-inline-start: $gutter;
+    }
+  }
+
+  .header-md:after,
+  .footer-md::before {
+    display: none !important;
+  }
+
+  ion-searchbar {
+    --box-shadow: none;
+    border-radius: $border-radius-md;
+
+    input {
+      border-radius: $border-radius-md !important;
+    }
+  }
+
+  ion-badge {
+    top: -5px;
+    left: -5px;
+    min-width: 19px;
+    height: 19px;
+  }
+}

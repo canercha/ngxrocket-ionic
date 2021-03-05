@@ -1,0 +1,144 @@
+//
+// Symbol
+//
+
+// Base
+.symbol {
+    display: inline-block;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: $border-radius;
+
+    // Label
+    .symbol-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        color: $dark-50;
+        background-color: $gray-50;
+
+        @media (prefers-color-scheme: dark) {
+            background-color: $gray-150;
+        }
+
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        border-radius: $border-radius;
+    }
+
+    // Badge
+    .symbol-badge {
+        position: absolute;
+        border: 2px solid $light;
+        border-radius: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    // Image
+    >img {
+        display: flex;
+        border-radius: $border-radius;
+    }
+
+    // Circle style
+    &.symbol-circle {
+        @include border-radius($border-radius-md);
+
+        >img {
+            @include border-radius($border-radius-md);
+        }
+
+        .symbol-label {
+            @include border-radius($border-radius-md);
+        }
+    }
+
+    // Circle style
+    &.symbol-circle-full {
+        @include border-radius($border-radius-full);
+
+        >img {
+            @include border-radius($border-radius-full);
+        }
+
+        .symbol-label {
+            @include border-radius($border-radius-full);
+        }
+    }
+
+    // Theme colors
+    @each $color,
+    $value in $theme-colors {
+
+        // Default style
+        &.symbol-#{$color} {
+            .symbol-label {
+                background-color: $value;
+                color: theme-inverse-color($color);
+            }
+        }
+
+        // Light style
+        &.symbol-light-#{$color} {
+            .symbol-label {
+                background-color: theme-light-color($color);
+                color: $value;
+            }
+        }
+    }
+
+    @each $name,
+    $value in $symbol-sizes {
+
+        // Default style
+        &.symbol-#{$name} {
+            @include symbol-size($value);
+        }
+    }
+}
+
+// symbol Group
+.symbol-group {
+    display: flex;
+    align-items: center;
+
+    .symbol {
+        position: relative;
+        z-index: 0;
+        margin-left: -10px;
+        border: 2px solid $white;
+        transition: all 0.3s ease;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+    }
+
+    &.symbol-hover {
+        .symbol {
+            cursor: pointer;
+        }
+    }
+}
+
+// symbol List
+.symbol-list {
+    display: flex;
+    align-items: center;
+
+    .symbol {
+        margin-right: 0.5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

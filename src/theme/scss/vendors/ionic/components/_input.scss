@@ -1,0 +1,31 @@
+//
+// Input
+//
+
+ion-item-group {
+  position: relative;
+
+  &+& {
+    margin-top: $gutter;
+  }
+
+  ion-text {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    font-size: 10px;
+    padding: 0.25rem 0.5rem;
+    background: var(--ion-color-light);
+    z-index: 9;
+  }
+
+  ion-button {
+    position: absolute;
+    top: $gutter;
+    right: $gutter;
+    font-size: $finger-size-base;
+    height: 1.5em;
+    width: 1.5em;
+    z-index: 9;
+  }
+}

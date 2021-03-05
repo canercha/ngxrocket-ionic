@@ -1,0 +1,15 @@
+//
+// Content
+//
+
+ion-content {
+  [content="shape"] {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 180px;
+    width: 100%;
+    background-color: var(--ion-color-primary);
+    z-index: -1;
+  }
+}

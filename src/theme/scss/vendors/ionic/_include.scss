@@ -1,0 +1,12 @@
+//
+// Customized Ionic Version For App
+//
+
+// 1: Override Framework Components
+@import 
+    "components/badge";
+
+// 2: Fix: Remove the ionic default effects from the HTML
+@import 
+    "mode/md-fix",
+    "mode/ios-fix";

@@ -1,0 +1,43 @@
+//
+// Toolbar
+//
+
+ion-toolbar {
+  padding-top: .75rem;
+  --padding-top: .75rem;
+  --padding-bottom: .75rem;
+
+  &[toolbar='shape'] {
+    color: var(--ion-color-primary-contrast);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      transition: 0.3s linear,
+        background 220ms ease 0s;
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+
+      @media (prefers-color-scheme: light) {
+        background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22186%22%20fill%3D%22none%22%20viewBox%3D%220%200%20414%20256%22%3E%3Cmask%20id%3D%22header-shape-a%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22414%22%20height%3D%22256%22%3E%3Cpath%20fill%3D%22%23C4C4C4%22%20d%3D%22M0%200h414v256H0z%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23header-shape-a%29%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M30%20369c118.741%200%20215-96.259%20215-215S148.741-61%2030-61s-215%2096.259-215%20215%2096.259%20215%20215%20215zm0-112.648c56.528%200%20102.352-45.825%20102.352-102.352C132.352%2097.472%2086.527%2051.648%2030%2051.648-26.528%2051.648-72.352%2097.472-72.352%20154c0%2056.527%2045.825%20102.352%20102.352%20102.352z%22%20fill%3D%22url%28%23header-shape-paint0_linear%29%22%2F%3E%3Cpath%20d%3D%22M349%20119.5c-13.2-111.2-69.5-147-96-151l63.5-84.5L508-90.5c9.833%2070%2013.7%20194.2-49.5%20131-79-79-93%20218-109.5%2079z%22%20fill%3D%22url%28%23header-shape-paint1_linear%29%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22header-shape-paint0_linear%22%20x1%3D%221178.5%22%20y1%3D%22843%22%20x2%3D%22-3%22%20y2%3D%2254.5%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23F0F4FD%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22header-shape-paint1_linear%22%20x1%3D%22146.5%22%20y1%3D%2212.5%22%20x2%3D%22352.219%22%20y2%3D%22121.602%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23F0F4FD%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23fff%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
+      }
+
+      @media (prefers-color-scheme: dark) {
+        background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22300%22%20height%3D%22186%22%20fill%3D%22none%22%20viewBox%3D%220%200%20414%20256%22%3E%3Cmask%20id%3D%22header-shape-a%22%20maskUnits%3D%22userSpaceOnUse%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22414%22%20height%3D%22256%22%3E%3Cpath%20fill%3D%22%23C4C4C4%22%20d%3D%22M0%200h414v256H0z%22%2F%3E%3C%2Fmask%3E%3Cg%20mask%3D%22url%28%23header-shape-a%29%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M30%20369c118.741%200%20215-96.259%20215-215S148.741-61%2030-61s-215%2096.259-215%20215%2096.259%20215%20215%20215zm0-112.648c56.528%200%20102.352-45.825%20102.352-102.352C132.352%2097.472%2086.527%2051.648%2030%2051.648-26.528%2051.648-72.352%2097.472-72.352%20154c0%2056.527%2045.825%20102.352%20102.352%20102.352z%22%20fill%3D%22url%28%23header-shape-paint0_linear%29%22%2F%3E%3Cpath%20d%3D%22M349%20119.5c-13.2-111.2-69.5-147-96-151l63.5-84.5L508-90.5c9.833%2070%2013.7%20194.2-49.5%20131-79-79-93%20218-109.5%2079z%22%20fill%3D%22url%28%23header-shape-paint1_linear%29%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22header-shape-paint0_linear%22%20x1%3D%221178.5%22%20y1%3D%22843%22%20x2%3D%22-3%22%20y2%3D%2254.5%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23F0F4FD%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%2215202b%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient%20id%3D%22header-shape-paint1_linear%22%20x1%3D%22146.5%22%20y1%3D%2212.5%22%20x2%3D%22352.219%22%20y2%3D%22121.602%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23F0F4FD%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%2215202b%22%20stop-opacity%3D%220%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E');
+      }
+    }
+  }
+
+
+  ion-title {
+    padding-inline-start: 1.75rem;
+  }
+
+  ion-back-button,
+  ion-button {
+    --color: var(--ion-color-primary-contrast);
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "ngxrocket-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

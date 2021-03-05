@@ -1,0 +1,63 @@
+//
+// Spacers
+//
+
+@each $name,
+$spacer in $spacers {
+
+  .m-#{$name} {
+    @include m($spacer);
+  }
+
+  .mt-#{$name} {
+    @include mt($spacer);
+  }
+
+  .mb-#{$name} {
+    @include mb($spacer);
+  }
+
+  .ml-#{$name} {
+    @include ml($spacer);
+  }
+
+  .mr-#{$name} {
+    @include mr($spacer);
+  }
+
+  .p-#{$name} {
+    @include p($spacer);
+  }
+
+  .pt-#{$name} {
+    @include pt($spacer);
+  }
+  
+  .pb-#{$name} {
+    @include pb($spacer);
+  }
+  
+  .pl-#{$name} {
+    @include pl($spacer);
+  }
+  
+  .pr-#{$name} {
+    @include pr($spacer);
+  }
+  
+  .mx-#{$name} {
+    @include mx($spacer);
+  }
+
+  .my-#{$name} {
+    @include my($spacer);
+  }
+  
+  .px-#{$name} {
+    @include px($spacer);
+  }
+  
+  .py-#{$name} {
+    @include py($spacer);
+  }
+}

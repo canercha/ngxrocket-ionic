@@ -1,0 +1,33 @@
+// Core CSS required for Ionic components to work properly
+@import 
+    "~@ionic/angular/css/core.css";
+
+// Basic CSS for apps built with Ionic
+@import 
+    "~@ionic/angular/css/normalize.css",
+    "~@ionic/angular/css/structure.css",
+    "~@ionic/angular/css/typography.css",
+    "~@ionic/angular/css/display.css";
+
+// Optional CSS utils that can be commented out
+@import 
+    "~@ionic/angular/css/padding.css",
+    "~@ionic/angular/css/float-elements.css",
+    "~@ionic/angular/css/text-alignment.css",
+    "~@ionic/angular/css/text-transformation.css",
+    "~@ionic/angular/css/flex-utils.css";
+
+// Functions
+@import 
+    "base/functions",
+    "components/mixins";
+
+// Mixins
+@import 
+    "base/mixins";
+
+// Global variables
+@import
+    "components/variables.ionic",
+    "components/variables.bootstrap",
+    "components/variables.custom";

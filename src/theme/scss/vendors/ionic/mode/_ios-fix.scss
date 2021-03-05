@@ -1,0 +1,64 @@
+// Fix: "Remove the ionic default effects from the HTML"
+[mode="ios"],
+.ios {
+  button,
+  html [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button-bevel;
+  }
+
+  ion-item[appearance="outline"] {
+    z-index: 9;
+    ion-label {
+      transform: translate3d(0, 1em, 0) !important;
+    }
+
+    ion-input {
+      input {
+        padding: 0 !important;
+        margin-bottom: 0;
+      }
+    }
+
+    &.item-has-focus {
+      ion-label {
+        transform: translate3d(0, 0, 0) scale(0.82) !important;
+      }
+    }
+
+    &.item-has-value {
+      ion-label {
+        transform: translate3d(0, 0, 0) scale(0.82) !important;
+      }
+    }
+  }
+
+  ion-toolbar {
+    ion-buttons[slot="start"] {
+      & ~ ion-title {
+        padding-inline-start: 3.5rem;
+      }
+    }
+
+    ion-back-button {
+      padding-inline-start: 0.75rem;
+      padding-inline-end: 0.75rem;
+    }
+
+    ion-title {
+      padding-inline-start: 1.75rem;
+    }
+  }
+
+  .header-ios ion-toolbar:last-of-type {
+    --border-width: 0;
+  }
+
+  ion-badge {
+    top: 0;
+    left: -5px;
+    min-width: 19px;
+    height: 19px;
+  }
+}

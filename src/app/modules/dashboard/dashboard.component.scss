@@ -1,0 +1,14 @@
+@import "src/theme/scss/components/variables.bootstrap";
+
+:host::ng-deep {
+    app-toggle-card {
+        margin-top: -60px;
+    }
+}
+
+ion-content {
+    overflow: hidden;
+    border-bottom-right-radius: $border-radius-xl;
+    border-bottom-left-radius: $border-radius-xl;
+    z-index: 99;
+}

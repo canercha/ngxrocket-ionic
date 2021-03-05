@@ -1,0 +1,38 @@
+//
+// SVG Icon
+//
+
+.svg-icon {
+
+    // Theme colors
+    @each $name,
+    $color in $theme-text-colors {
+        &.svg-icon-#{$name} {
+            color: $color
+        }
+
+        &.svg-icon-color#{$name} {
+            @include svg-icon-color($color, true);
+        }
+
+        &.svg-logo-#{$name} {
+            @include svg-logo-color($color, true);
+        }
+    }
+
+    // Sizes
+    @each $name,
+    $value in $svg-icon-sizes {
+        &.svg-icon-#{$name} {
+            @include svg-icon-size($value, true);
+            height: $value !important;
+            width: $value !important;
+        }
+    }
+
+    &.svg-icon-flip {
+        svg {
+            transform: scaleX(-1);
+        }
+    }
+}

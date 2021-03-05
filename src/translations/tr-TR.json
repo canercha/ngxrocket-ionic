@@ -1,0 +1,49 @@
+{
+    "APP_NAME": "Senyonet Yönetici",
+    "Auth": {
+        "Login": "Giriş Yap",
+        "Password": "Şifre",
+        "Title": "Yönetmek Daha Kolay",
+        "Username": "Kullanıcı Adı",
+        "UsernameORPasswordIncorrect": "Kullanıcı adı veya şifre hatalı."
+    },
+    "DashboardPage": {
+        "Title": "Genel Bakış"
+    },
+    "Global": {
+        "Cancel": "İptal",
+        "Change": "Değiştir",
+        "ChangeLanguage": "Ekran Dilini Değiştir",
+        "Confirm": {
+            "EditCancel": "Düzenlemeye Devam Et",
+            "EditHeader": "Değişiklikleri Yoksay?",
+            "EditOk": "Değişiklikleri Yoksay",
+            "EditSubHeader": "Şimdi geri dönersen, değişikliklerini kaybedeceksin.",
+            "Title": "Onayla"
+        },
+        "Download": "İndir",
+        "Edit": "Düzenle",
+        "Info": "Bilgi",
+        "Language": "Dil",
+        "No": "Hayır",
+        "Ok": "Tamam",
+        "Required": "Gerekli",
+        "Save": "Kaydet",
+        "Search": "Ara",
+        "SignGet": "İmzala Al",
+        "View": "Görüntüle",
+        "Warning": "Uyarı",
+        "Yes": "Evet"
+    },
+    "SettingsPage": {
+        "Account": {
+            "Title": "Hesap",
+            "WarningSubHeader": "Oturumu kapatmak üzeresiniz."
+        },
+        "LogoutOfBlaBlaBla": "{{Username}} oturumunu kapatın",
+        "Preferences": {
+            "Title": "Tercihler"
+        },
+        "Title": "Ayarlar"
+    }
+}

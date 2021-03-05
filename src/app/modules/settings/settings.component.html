@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar toolbar="shape" color="primary" class="ion-no-margin">
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="chevron-back-outline" defaultHref="dashboard"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-text-left"> {{ 'SettingsPage.Title' | translate }} </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div content="shape"></div>
+    <ion-grid>
+        <ion-list>
+            <ion-list-header>
+                <ion-label> {{ 'SettingsPage.Account.Title' | translate }} </ion-label>
+            </ion-list-header>
+            <ion-row class="ion-align-items-stretch">
+                <ion-col size="12" size-md="6">
+                    <app-account-logout (click)="logout()"></app-account-logout>
+                </ion-col>
+            </ion-row>
+            <ion-list-header>
+                <ion-label class="mt-0"> {{ 'SettingsPage.Preferences.Title' | translate }} </ion-label>
+            </ion-list-header>
+            <ion-row class="ion-align-items-stretch">
+                <ion-col *ngIf="isWeb" size="12" size-md="6">
+                    <ng-container>
+                        <app-language-selector type="item" color="info"></app-language-selector>
+                    </ng-container>
+                </ion-col>
+            </ion-row>
+        </ion-list>
+    </ion-grid>
+
+</ion-content>

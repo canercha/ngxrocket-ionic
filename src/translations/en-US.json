@@ -1,0 +1,49 @@
+{
+    "APP_NAME": "Senyonet Manager",
+    "Auth": {
+        "Login": "Login",
+        "Password": "Password",
+        "Title": "Easier to Manage",
+        "Username": "Username",
+        "UsernameORPasswordIncorrect": "Username or password incorrect."
+    },
+    "DashboardPage": {
+        "Title": "Dashboard"
+    },
+    "Global": {
+        "Cancel": "Cancel",
+        "Change": "Change",
+        "ChangeLanguage": "Change Display Language",
+        "Confirm": {
+            "EditCancel": "Continue Editing",
+            "EditHeader": "Ignore Changes?",
+            "EditOk": "Ignore Changes",
+            "EditSubHeader": "If you come back now, you will lose your changes.",
+            "Title": "Confirm"
+        },
+        "Download": "Download",
+        "Edit": "Edit",
+        "Info": "Info",
+        "Language": "Language",
+        "No": "No",
+        "Ok": "Okay",
+        "Required": "Required",
+        "Save": "Save",
+        "Search": "Search",
+        "SignGet": "Sign Get",
+        "View": "View",
+        "Warning": "Warning",
+        "Yes": "Yes"
+    },
+    "SettingsPage": {
+        "Account": {
+            "Title": "Account",
+            "WarningSubHeader": "You are about to log out."
+        },
+        "LogoutOfBlaBlaBla": "Logout out of {{Username}}",
+        "Preferences": {
+            "Title": "Preferences"
+        },
+        "Title": "Settings"
+    }
+}

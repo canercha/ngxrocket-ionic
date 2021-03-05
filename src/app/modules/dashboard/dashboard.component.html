@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar class="ion-no-margin ion-padding-top">
+        <ion-title class="font-size-24 ion-text-left"> {{ 'DashboardPage.Title' | translate }} </ion-title>
+        <ion-buttons slot="end">
+            <ion-button class="badge-button">
+                <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+                <ion-badge color="primary">6</ion-badge>
+            </ion-button>
+            <ion-button routerLink="/app/settings" routerLinkActive="active">
+                <ion-icon slot="icon-only" name="settings-outline"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-row class="ion-align-items-stretch">
+            <ion-col size="12" size-md="6">
+                app-dashboard
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

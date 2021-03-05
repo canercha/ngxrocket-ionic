@@ -1,0 +1,39 @@
+<ng-container [ngSwitch]="type">
+    <ion-button *ngSwitchCase="'icon'" class="profile-button" (click)="changeLanguage()">
+        <ion-icon name="earth-outline"></ion-icon>
+    </ion-button>
+
+    <div class="card card-custom mx-4 border border-solid border-medium rounded" *ngSwitchCase="'select'">
+        <div class="card-body">
+            <div class="d-flex flex-row justify-content-between w-100 pl-4 pr-3">
+                <span class="d-flex align-items-center justify-content-center text-dark-75 font-weight-500">
+                    {{ 'Global.ChangeLanguage' | translate }}
+                </span>
+                <span class="text-muted font-weight-400">
+                    <ion-select [ngModel]="currentLanguage" (ngModelChange)="setLanguage($event)" interface="popover">
+                        <ion-select-option *ngFor="let language of languages" [value]="language">{{ language }}
+                        </ion-select-option>
+                    </ion-select>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-custom" *ngSwitchCase="'item'" button (click)="changeLanguage()">
+        <div class="card-body">
+            <div class="d-flex align-items-center justify-content-between flex-grow-1">
+                <span class="symbol symbol-circle symbol-50 symbol-light-{{color}}">
+                    <span class="symbol-label">
+                        <ion-icon class="svg-icon svg-icon-lg svg-icon-{{color}}" name="earth-outline">
+                        </ion-icon>
+                    </span>
+                </span>
+                <div class="d-flex flex-row justify-content-between w-100 pl-4 pr-3">
+                    <span class="text-dark-75 font-weight-500">
+                        {{ 'Global.ChangeLanguage' | translate }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-container>

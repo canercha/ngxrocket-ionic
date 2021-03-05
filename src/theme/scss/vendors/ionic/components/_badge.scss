@@ -1,0 +1,16 @@
+//
+// Badge
+//
+
+.badge-button {
+  ion-badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: ($finger-size-base - 2);
+    padding: 3px 0 0;
+    border-radius: ($border-radius + 1);
+    --background: var(--ion-color-warning)
+  }
+}

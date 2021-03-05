@@ -1,0 +1,30 @@
+//
+// Grid
+//
+
+ion-grid {
+    padding: $gutter;
+    border-top-right-radius: $border-radius-xl;
+    border-top-left-radius: $border-radius-xl;
+    background-color: var(--ion-background-color);
+}
+
+ion-col {
+    padding: $gutter * .5;
+
+    &[masonry="1"] {
+        column-count: 1
+    }
+
+    &[masonry="2"] {
+        column-count: 2
+    }
+
+    &[masonry="3"] {
+        column-count: 3
+    }
+
+    &[masonry="4"] {
+        column-count: 4
+    }
+}

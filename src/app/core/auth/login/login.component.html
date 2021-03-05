@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true" [scrollY]="false">
+  <div class="login-background"></div>
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-justify-content-center ion-no-padding">
+      <ion-col size-sm="8" size-lg="6" size-xl="4" class="ion-align-self-center ion-no-padding ion-text-center">
+        <div class="login-header ion-text-center">
+          <ion-icon [src]="appIcon"></ion-icon>
+          <h1 class="ion-padding font-weight-500"> {{ 'Auth.Title' | translate }} </h1>
+          <h6 class="ion-padding"> {{ 'Auth.Description' | translate }} </h6>
+          <!-- <ion-list *ngIf="isWeb" color="primary" lines="none" class="ion-no-padding">
+            <app-language-selector type="select"> </app-language-selector>
+          </ion-list> -->
+        </div>
+        <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+          <ng-container *ngIf="error">
+            <div class="mb-10 alert alert-custom alert-light-danger alert-dismissible">
+              <div class="alert-text">
+                {{ 'Auth.UsernameORPasswordIncorrect' | translate }}
+              </div>
+            </div>
+          </ng-container>
+          <ion-list class="ion-padding">
+            <ion-item-group>
+              <ion-item appearance="outline" lines="none"
+                [ngClass]="{'item-has-error': !(loginForm.controls.username.valid || loginForm.controls.username.untouched)}">
+                <ion-label color="medium" position="floating"> {{ 'Auth.Username' | translate }}
+                </ion-label>
+                <ion-input type="text" formControlName="username" autocomplete="username"></ion-input>
+              </ion-item>
+              <ion-text color="danger"
+                [hidden]="loginForm.controls.username.valid || loginForm.controls.username.untouched">
+                {{ 'Global.Required' | translate }}
+              </ion-text>
+            </ion-item-group>
+            <ion-item-group>
+              <ion-item appearance="outline" lines="none"
+                [ngClass]="{'item-has-error': !(loginForm.controls.password.valid || loginForm.controls.password.untouched)}">
+                <ion-label color="medium" position="floating"> {{ 'Auth.Password' | translate }}
+                </ion-label>
+                <ion-input [type]="isTextFieldType ? 'text' : 'password'" formControlName="password"
+                  autocomplete="current-password" (keyup.enter)="login()"></ion-input>
+              </ion-item>
+              <ion-button (click)="togglePasswordFieldType()" slot="end" fill="clear" color="dark"
+                class="ion-no-padding">
+                <ion-icon [name]="isTextFieldType ? 'eye-off-outline' : 'eye-outline'"> </ion-icon>
+              </ion-button>
+              <ion-text color="danger"
+                [hidden]="loginForm.controls.password.valid || loginForm.controls.password.untouched">
+                {{ 'Global.Required' | translate }}
+              </ion-text>
+            </ion-item-group>
+
+          </ion-list>
+          <div class="ion-padding-horizontal">
+            <ion-button type="submit" [disabled]="loginForm.invalid ||  isLoading" color="primary" expand="block">
+              {{ 'Auth.Login' | translate }}
+            </ion-button>
+          </div>
+        </form>
+        <div class="ion-padding"> <small>v{{ version }}</small> </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

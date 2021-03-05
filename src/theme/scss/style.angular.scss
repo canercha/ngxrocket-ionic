@@ -1,0 +1,39 @@
+//
+// Main Style
+//
+
+
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+
+// 1: Initialize
+@import
+    "init";
+
+// 2: Bootstrap framework includes
+@import
+    "vendors/ionic/include";
+
+// 3: Components
+@import 
+    "components/utilities",
+    "components/card",
+    "components/alert",
+    "components/buttons",
+    // "components/forms/base",
+    "components/symbol",
+    "components/svg-icon",
+    "components/svg",
+    "components/type",
+    "components/tooltip",
+    "components/icons",
+    "components/bullet";
+
+// 4: Plugins
+@import 
+    "vendors/plugins/apexcharts";
+
+// 5: Layout
+@import 
+    "layout/init";
