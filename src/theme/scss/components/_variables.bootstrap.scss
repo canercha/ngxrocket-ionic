@@ -16,43 +16,43 @@ $white:                                              #ffffff !default;
 // Medium colors
 $medium:              			                         #919BB3 !default;
 
-// Body
-$body-bg:                   			                   #ffffff !default; // background-color
-$body-color:                			                   #15202b !default; // text-color
-
 // Gray colors
-$gray-50: 				                                   #e5e9f4 !default;
-$gray-100: 				                                   #d9dfeb !default;
-$gray-150: 				                                   #ced4e2 !default;
-$gray-200: 				                                   #c2cada !default;
-$gray-250: 				                                   #b7bfd1 !default;
-$gray-300: 				                                   #abb4c8 !default;
-$gray-350: 				                                   #a0aabf !default;
-$gray-400: 				                                   #949fb6 !default;
-$gray-450: 				                                   #8995ad !default;
-$gray-500: 				                                   #838a94 !default;
-$gray-550: 				                                   #787f8a !default;
-$gray-600: 				                                   #6d757f !default;
-$gray-650: 				                                   #626a75 !default;
-$gray-700: 				                                   #57606a !default;
-$gray-750: 				                                   #4c5560 !default;
-$gray-800: 				                                   #414a55 !default;
-$gray-850: 				                                   #36404b !default;
-$gray-900: 				                                   #2b3540 !default;
-$gray-950: 				                                   #202b36 !default;
+$gray-50: 				                                   #f0f4fd !default;
+$gray-100: 				                                   #e6e6e6 !default;
+$gray-150: 				                                   #d9d9d9 !default;
+$gray-200: 				                                   #cccccc !default;
+$gray-250: 				                                   #bfbfbf !default;
+$gray-300: 				                                   #b3b3b3 !default;
+$gray-350: 				                                   #a6a6a6 !default;
+$gray-400: 				                                   #999999 !default;
+$gray-450: 				                                   #8c8c8c !default;
+$gray-500: 				                                   #808080 !default;
+$gray-550: 				                                   #737373 !default;
+$gray-600: 				                                   #666666 !default;
+$gray-650: 				                                   #595959 !default;
+$gray-700: 				                                   #4d4d4d !default;
+$gray-750: 				                                   #404040 !default;
+$gray-800: 				                                   #333333 !default;
+$gray-850: 				                                   #262626 !default;
+$gray-900: 				                                   #191919 !default;
+$gray-950: 				                                   #1c1c1e !default;
 
 // Hover background color
 $hover-bg:                                           $gray-100 !default;
 
+// Body
+$body-bg:                   			                   $gray-50 !default; // background-color
+$body-color:                			                   $gray-900 !default; // text-color
+
 // Dark colors
-$dark:              			                           #253341 !default;
+$dark:              			                           $gray-950 !default;
 $dark-75:           			                           $gray-900 !default;
 $dark-65:           			                           $gray-800 !default;
 $dark-50:           			                           $gray-700 !default;
 $dark-25:           			                           $gray-600 !default;
 
 // Light colors
-$light:              			                           #F5F5F5 !default;
+$light:              			                           $white !default;
 $light-75:           			                           $gray-100 !default;
 $light-65:           			                           $gray-200 !default;
 $light-50:           			                           $gray-300 !default;

@@ -4,7 +4,10 @@
 
 // 1: Override Framework Components
 @import 
-    "components/badge";
+    "components/badge",
+    "components/button",
+    "components/input",
+    "components/item";
 
 // 2: Fix: Remove the ionic default effects from the HTML
 @import 

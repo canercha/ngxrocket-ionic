@@ -118,10 +118,10 @@
   --ion-text-color: #{$body-color};
   --ion-text-color-rgb: #{$body-color};
 
-  --ion-toolbar-background: #{$white};
+  --ion-toolbar-background: #{$gray-50};
   --ion-toolbar-color: #{$gray-950};
 
-  --ion-tab-bar-background: #{$white};
+  --ion-tab-bar-background: #{$gray-50};
   --ion-tab-bar-color: #{$gray-950};
 
   --ion-color-step-50: #{$gray-50};
@@ -248,19 +248,17 @@
   //
 
   .ios body {
-    --ion-background-color: #{$body-color};
-    --ion-background-color-rgb: #{$body-color};
+    --ion-background-color: #{$black};
+    --ion-background-color-rgb: #{$black};
 
-    --ion-text-color: #{$body-bg};
-    --ion-text-color-rgb: #{$body-bg};
+    --ion-text-color: #{$gray-150};
+    --ion-text-color-rgb: #{$gray-150};
 
-    --ion-toolbar-background: #{$black};
+    --ion-toolbar-background: #{$gray-950};
     --ion-toolbar-color: #{$gray-50};
 
-    --ion-tab-bar-background: #{$black};
+    --ion-tab-bar-background: #{$gray-950};
     --ion-tab-bar-color: #{$gray-50};
-
-    --ion-item-background: #{$body-color};
 
     --ion-color-step-50: #{$gray-950};
     --ion-color-step-100: #{$gray-900};
@@ -294,13 +292,11 @@
     --ion-text-color: #{$body-bg};
     --ion-text-color-rgb: #{$body-bg};
 
-    --ion-toolbar-background: #{$black};
+    --ion-toolbar-background: #{$gray-950};
     --ion-toolbar-color: #{$gray-50};
 
-    --ion-tab-bar-background: #{$black};
+    --ion-tab-bar-background: #{$gray-950};
     --ion-tab-bar-color: #{$gray-50};
-    
-    --ion-item-background: #{$body-color};
 
     --ion-color-step-50: #{$gray-950};
     --ion-color-step-100: #{$gray-900};
