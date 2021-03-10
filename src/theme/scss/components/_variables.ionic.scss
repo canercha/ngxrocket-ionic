@@ -255,10 +255,14 @@
     --ion-text-color-rgb: #{$gray-150};
 
     --ion-toolbar-background: #{$gray-950};
-    --ion-toolbar-color: #{$gray-50};
+    --ion-toolbar-color: #{$gray-150};
 
     --ion-tab-bar-background: #{$gray-950};
-    --ion-tab-bar-color: #{$gray-50};
+    --ion-tab-bar-color: #{$gray-150};
+
+    --ion-item-background: #{$black};
+
+    --ion-card-background: #{$gray-950};
 
     --ion-color-step-50: #{$gray-950};
     --ion-color-step-100: #{$gray-900};
@@ -281,22 +285,32 @@
     --ion-color-step-950: #{$gray-50};
   }
 
+  .ios ion-modal {
+    --ion-background-color: #{$gray-900};
+    --ion-toolbar-background:  #{$gray-850};
+    --ion-toolbar-border-color:  #{$gray-750};
+  }
+
   //
   // Material Design Dark Theme
   //
 
   .md body {
-    --ion-background-color: #{$body-color};
-    --ion-background-color-rgb: #{$body-color};
+    --ion-background-color: #{$black};
+    --ion-background-color-rgb: #{$black};
 
-    --ion-text-color: #{$body-bg};
-    --ion-text-color-rgb: #{$body-bg};
+    --ion-text-color: #{$gray-150};
+    --ion-text-color-rgb: #{$gray-150};
 
     --ion-toolbar-background: #{$gray-950};
-    --ion-toolbar-color: #{$gray-50};
+    --ion-toolbar-color: #{$gray-150};
 
     --ion-tab-bar-background: #{$gray-950};
-    --ion-tab-bar-color: #{$gray-50};
+    --ion-tab-bar-color: #{$gray-150};
+
+    --ion-item-background: #{$black};
+
+    --ion-card-background: #{$gray-950};
 
     --ion-color-step-50: #{$gray-950};
     --ion-color-step-100: #{$gray-900};
