@@ -6,6 +6,7 @@
 @each $color, $value in $theme-colors {
 	.bg-#{$color} {
 		background-color: $value !important;
+		color: theme-inverse-color($color);
 	}
 
 	// Hover color
@@ -16,6 +17,7 @@
 		&:hover {
 			transition: $transition;
 			background-color: $value !important;
+			color: theme-inverse-color($color);
 		}
 	}
 
@@ -37,6 +39,7 @@
 		&:hover {
 			transition: $transition;
 			background-color: theme-hover-color($color) !important;
+			color: theme-inverse-color($color);
 		}
 	}
 

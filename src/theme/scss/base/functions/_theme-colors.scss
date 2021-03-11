@@ -1,5 +1,5 @@
 //
-// Ionic extended functions
+// Theme extended functions
 //
 
 @function theme-inverse-color($key: "primary") {
@@ -20,4 +20,28 @@
 
 @function theme-shadow-color($key: "primary") {
     @return get($theme-shadow-colors, $key);
+}
+
+//
+// Theme extended functions (dark)
+//
+
+@function theme-inverse-color-dark($key: "primary") {
+    @return get($theme-inverse-colors-dark, $key);
+}
+
+@function theme-outline-inverse-color-dark($key: "primary") {
+    @return get($theme-outline-inverse-colors-dark, $key);
+}
+
+@function theme-hover-color-dark($key: "primary") {
+    @return get($theme-hover-colors-dark, $key);
+}
+
+@function theme-light-color-dark($key: "primary") {
+    @return get($theme-light-colors-dark, $key);
+}
+
+@function theme-shadow-color-dark($key: "primary") {
+    @return get($theme-shadow-colors-dark, $key);
 }
