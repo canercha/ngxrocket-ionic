@@ -8,7 +8,7 @@ export const environment = {
   hmr: true,
   version: env.npm_package_version + '-dev',
   serverUrl: '/api',
-  appIcon: 'assets/appicon.svg',
+  appIcon: 'assets/appicon.png',
   defaultLanguage: 'tr-TR',
   supportedLanguages: ['tr-TR', 'en-US'],
 };

@@ -6,10 +6,10 @@
     <div class="card card-custom mx-4 border border-solid border-medium rounded" *ngSwitchCase="'select'">
         <div class="card-body">
             <div class="d-flex flex-row justify-content-between w-100 pl-4 pr-3">
-                <span class="d-flex align-items-center justify-content-center text-dark-75 font-weight-500">
+                <span class="d-flex align-items-center justify-content-center text-dark-75 fw-bold">
                     {{ 'Global.ChangeLanguage' | translate }}
                 </span>
-                <span class="text-muted font-weight-400">
+                <span class="text-muted fw-normal">
                     <ion-select [ngModel]="currentLanguage" (ngModelChange)="setLanguage($event)" interface="popover">
                         <ion-select-option *ngFor="let language of languages" [value]="language">{{ language }}
                         </ion-select-option>
@@ -29,7 +29,7 @@
                     </span>
                 </span>
                 <div class="d-flex flex-row justify-content-between w-100 pl-4 pr-3">
-                    <span class="text-dark-75 font-weight-500">
+                    <span class="text-dark-75 fw-bold">
                         {{ 'Global.ChangeLanguage' | translate }}
                     </span>
                 </div>

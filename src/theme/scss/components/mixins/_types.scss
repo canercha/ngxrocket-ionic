@@ -3,5 +3,9 @@
 //
 
 @mixin font-size($size) {
-    font-size: $size;
+    font-size: $size !important;
+}
+
+@mixin display-size($size) {
+    font-size: $size !important;
 }

@@ -1,9 +1,10 @@
 {
-    "APP_NAME": "Senyonet Manager",
+    "APP_NAME": "ngXRocketIonic",
     "Auth": {
         "Login": "Login",
         "Password": "Password",
-        "Title": "Easier to Manage",
+        "Title": "ngXRocketIonic",
+        "Description": "Discover Amazing ngXRocketIonic with great build tools",
         "Username": "Username",
         "UsernameORPasswordIncorrect": "Username or password incorrect."
     },

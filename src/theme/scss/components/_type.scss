@@ -4,12 +4,29 @@
 
 
 // Headings
-.h1 { @include font-size($h1-font-size); }
-.h2 { @include font-size($h2-font-size); }
-.h3 { @include font-size($h3-font-size); }
-.h4 { @include font-size($h4-font-size); }
-.h5 { @include font-size($h5-font-size); }
-.h6 { @include font-size($h6-font-size); }
+.h1 {
+  @include font-size($h1-font-size);
+}
+
+.h2 {
+  @include font-size($h2-font-size);
+}
+
+.h3 {
+  @include font-size($h3-font-size);
+}
+
+.h4 {
+  @include font-size($h4-font-size);
+}
+
+.h5 {
+  @include font-size($h5-font-size);
+}
+
+.h6 {
+  @include font-size($h6-font-size);
+}
 
 // Lead
 .lead {
@@ -18,20 +35,53 @@
 
 // Type display classes
 .display-1 {
-  @include font-size($display1-size);
+  @include display-size($display1-size);
 }
+
 .display-2 {
-  @include font-size($display2-size);
+  @include display-size($display2-size);
 }
+
 .display-3 {
-  @include font-size($display3-size);
+  @include display-size($display3-size);
 }
+
 .display-4 {
-  @include font-size($display4-size);
+  @include display-size($display4-size);
+}
+
+// Font sizes
+
+.fs-xs {
+  font-size: $font-size-xs !important;
+}
+
+.fs-sm {
+  font-size: $font-size-sm !important;
+}
+
+.fs-md {
+  font-size: $font-size-md !important;
+}
+
+.fs-lg {
+  font-size: $font-size-lg !important;
+}
+
+.fs-xl {
+  font-size: $font-size-xl !important;
+}
+
+@each $name,
+$value in $font-sizes {
+
+  .fs-#{$name} {
+      font-size: $value !important;
+  }
 }
 
 // Reset global outline
 a,
 button {
-    outline: 0 !important;
+  outline: 0 !important;
 }

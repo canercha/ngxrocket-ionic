@@ -5,6 +5,7 @@
 // Theme Colors
 @each $name,
 $color in $theme-text-colors {
+
     // Base color
     .text-#{$name} {
         color: $color !important;
@@ -60,51 +61,254 @@ $color in $theme-text-colors {
     }
 }
 
-// Font sizes
-.font-size-base {
-    font-size: $font-size-base;
+// Font Weight
+
+.fw-lighter {
+    font-weight: $font-weight-lighter;
 }
 
-.font-size-sm {
-    font-size: $font-size-sm;
+.fw-light {
+    font-weight: $font-weight-normal;
 }
 
-.font-size-xs {
-    font-size: $font-size-xs;
+.fw-normal {
+    font-weight: $font-weight-normal;
 }
 
-.font-size-lg {
-    font-size: $font-size-lg;
-}
-
-// Boldest font
-.font-weight-bold {
+.fw-bold {
     font-weight: $font-weight-bold;
 }
 
+.fw-bolder {
+    font-weight: $font-weight-bolder;
+}
+
+.fw-boldest {
+    font-weight: $font-weight-boldest;
+}
+
+.fst-italic {
+    font-style: $font-style-italic;
+}
+
+.fst-normal {
+    font-style: $font-style-normal;
+}
+
 // Line heights
-.line-height-0 {
+.lh-0 {
     line-height: 0 !important;
 }
 
-.line-height-xs {
+.lh-xs {
     line-height: 0.75 !important;
 }
 
-.line-height-sm {
+.lh-sm {
     line-height: 1 !important;
 }
 
-.line-height-md {
+.lh-md {
     line-height: 1.25 !important;
 }
 
-.line-height-lg {
+.lh-lg {
     line-height: 1.5 !important;
 }
 
-.line-height-xl {
+.lh-xl {
     line-height: 1.75 !important;
+}
+
+// Links
+a {
+    text-decoration: none;
+    transition: $transition-link;
+
+    &:not(.mat-button):not(.mat-raised-button):not(.mat-flat-button):not(.mat-stroked-button):not(.mat-icon-button):not(.mat-fab):not(.mat-mini-fab) {
+
+        &:hover,
+        &:active {
+            text-decoration: none;
+            transition: $transition-link;
+        }
+    }
+}
+
+// Abbr
+abbr {
+    cursor: help;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.54);
+}
+
+// Blockquote
+blockquote {
+    border-left: 3px solid rgba(0, 0, 0, 0.12);
+    font-style: italic;
+    margin: 1em 0;
+    padding-left: 16px;
+
+    footer {
+        font-style: normal;
+
+        &:before {
+            content: "\2014 \00A0";
+        }
+    }
+
+    &.reverse {
+        border-left: none;
+        border-right: 3px solid rgba(0, 0, 0, 0.12);
+        text-align: right;
+        padding-left: 0;
+        padding-right: 16px;
+
+        footer {
+            &:before {
+                content: "";
+            }
+
+            &:after {
+                content: "\2014 \00A0";
+            }
+        }
+    }
+}
+
+// Code
+code {
+    font-family: "Monaco", "Menlo", "Consolas", "Ubuntu Mono", monospace;
+
+    &:not(.highlight) {
+        color: #28a745;
+        padding: 2px 3px;
+        border-radius: 2px;
+        line-height: 1.7;
+    }
+}
+
+// Definition lists
+dl {
+    dt {
+        font-weight: bold;
+    }
+
+    dd {
+        margin: 4px 0 16px 0;
+    }
+}
+
+// Mark
+mark {
+    background: #f7f49a;
+}
+
+// Pre
+pre {
+    line-height: 1.6;
+    margin: 8px 16px;
+    white-space: pre-wrap;
+}
+
+// Small
+small {
+    font-size: 80%;
+}
+
+// Table
+table {
+    thead {
+        tr {
+            th {
+                text-align: left;
+            }
+        }
+    }
+}
+
+// Text format helpers
+.text-italic {
+    font-style: italic;
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+
+.text-bold,
+strong {
+    font-weight: 700;
+}
+
+.text-strike {
+    text-decoration: line-through;
+}
+
+.text-super {
+    vertical-align: super;
+}
+
+.text-sub {
+    vertical-align: sub;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// Text align helpers
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Boxed text
+.text-boxed {
+    border-radius: 2px;
+    padding: 4px 8px;
+    margin: 0 8px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+// Truncate
+.text-truncate {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Nowrap
+.text-nowrap {
+    white-space: nowrap;
+}
+
+// Wrap
+.text-wrap {
+    white-space: normal;
+}
+
+// Break
+.text-break {
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 // Text transparent
@@ -130,13 +334,4 @@ $color in $theme-text-colors {
 // Cursor move
 .cursor-move {
     cursor: move;
-}
-
-// Link transition
-a {
-    transition: $transition-link;
-
-    &:hover {
-        transition: $transition-link;
-    }
 }

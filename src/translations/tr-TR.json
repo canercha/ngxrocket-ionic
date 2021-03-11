@@ -1,9 +1,10 @@
 {
-    "APP_NAME": "Senyonet Yönetici",
+    "APP_NAME": "ngXRocketIonic",
     "Auth": {
         "Login": "Giriş Yap",
         "Password": "Şifre",
-        "Title": "Yönetmek Daha Kolay",
+        "Title": "ngXRocketIonic",
+        "Description": "Harika derleme araçlarıyla ngXRocketIonic'i keşfedin",
         "Username": "Kullanıcı Adı",
         "UsernameORPasswordIncorrect": "Kullanıcı adı veya şifre hatalı."
     },

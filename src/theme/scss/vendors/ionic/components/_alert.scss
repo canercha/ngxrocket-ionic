@@ -1,0 +1,17 @@
+//
+// Alert
+//
+
+ion-alert {
+    button {
+        color: $blue !important;
+    }
+
+    .alert-radio-label {
+        color: $body-color !important;
+    }
+
+    .alert-radio-inner {
+        border-color: $body-color !important
+    }
+}

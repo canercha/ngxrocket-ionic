@@ -104,7 +104,7 @@ $medium-light:         		                            rgba($medium, .1 ) !default
 $medium-inverse:        		                          $white !default;
 
 // Primary colors
-$primary:       			                                #F2994A !default;
+$primary:       			                                #0d6efd !default;
 $primary-hover:    			                              darken($primary, 5%) !default;
 $primary-light:    			                              rgba($primary, .1 ) !default;
 $primary-inverse:  			                              $white !default;
@@ -710,14 +710,18 @@ $grid-divider-bg:                                     $gray-200 !default;
 $font-family-base:                                  'Poppins', Helvetica, sans-serif !default;
 
 $finger-size-base:                                  16px !default;
-$finger-size-lg:                                    $finger-size-base * 1.08 !default;
-$finger-size-sm:                                    $finger-size-base * .925 !default;
 $finger-size-xs:                                    $finger-size-base * .8 !default;
+$finger-size-sm:                                    $finger-size-base * .925 !default;
+$finger-size-md:                                    $finger-size-base * 1.08 !default;
+$finger-size-lg:                                    $finger-size-base * 1.26 !default;
+$finger-size-xl:                                    $finger-size-base * 1.48 !default;
 
 $font-size-base:                                    $finger-size-base !default;
-$font-size-lg:                                      $finger-size-lg !default;
-$font-size-sm:                                      $finger-size-sm !default;
 $font-size-xs:                                      $finger-size-xs !default;
+$font-size-sm:                                      $finger-size-sm !default;
+$font-size-md:                                      $finger-size-md !default;
+$font-size-lg:                                      $finger-size-lg !default;
+$font-size-xl:                                      $finger-size-xl !default;
 
 $h1-font-size:                                      $font-size-base * 2 !default;
 $h2-font-size:                                      $font-size-base * 1.75 !default;
@@ -740,17 +744,21 @@ $display5-size:                                     2.25rem !default;
 
 // Font Sizes
 $font-sizes: (
-    font-size-h1: $h1-font-size,
-    font-size-h2: $h2-font-size,
-    font-size-h3: $h3-font-size,
-    font-size-h4: $h4-font-size,
-    font-size-h5: $h5-font-size,
-    font-size-h6: $h6-font-size,
-    display1: $display1-size,
-    display2: $display2-size,
-    display3: $display3-size,
-    display4: $display4-size,
-    display5: $display5-size
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+) !default;
+
+// Display Sizes
+$display-sizes: (
+    1: $display1-size,
+    2: $display2-size,
+    3: $display3-size,
+    4: $display4-size,
+    5: $display5-size
 ) !default;
 
 $display1-weight:                                   300 !default;
@@ -764,12 +772,17 @@ $lead-font-weight:                                  300 !default;
 $small-font-size:                                   80% !default;
 
 // Font Weight
+$font-weight-base:                                  400 !default;
 $font-weight-lighter:                               lighter !default;
 $font-weight-light:                                 300 !default;
 $font-weight-normal:                                400 !default;
 $font-weight-bold:                                  500 !default;
-$font-weight-bolder:                                600 !default;
-$font-weight-boldest:                               700 !default;
+$font-weight-bolder:                                700 !default;
+$font-weight-boldest:                               900 !default;
+
+
+$font-style-italic:                                 italic !default;
+$font-style-normal:                                 normal !default;
 
 $line-height-base:                                  1.5 !default;
 
@@ -909,8 +922,8 @@ $table-compact-head-letter-spacing:                 0.1rem !default;
 $card-box-shadow: 								                  0px 0px 30px 0px rgba(82,63,105,0.05) !default;
 $card-border-color:                 			          $gray-200 !default;
 $card-cap-bg:                       			          $white !default;
-$card-spacer-y:                     			          2rem !default;
-$card-spacer-x:                    				          2.25rem !default;
+$card-spacer-y:                     			          1rem !default;
+$card-spacer-x:                    				          1.25rem !default;
 $card-border-radius:                			          $border-radius !default;
 
 $card-header-spacer-y:                              0.5rem !default;
@@ -923,7 +936,6 @@ $card-sticky-shadow:                                0px 1px 15px 1px rgba(69, 65
 // List group
 $list-group-border-color:           		        		$gray-200 !default;
 $list-group-hover-bg:               		        		$gray-200 !default;
-
 
 // Modals
 
@@ -963,14 +975,12 @@ $modal-lg:                          			          800px !default;
 $modal-md:                          			          500px !default;
 $modal-sm:                          			          300px !default;
 
-
 // Pagination
 $pagination-color:                  				        $primary !default;
 $pagination-border-color:           				        $gray-300 !default;
 $pagination-hover-bg:              	 				        $gray-200 !default;
 $pagination-hover-border-color:     				        $gray-300 !default;
 $pagination-disabled-border-color:  				        $gray-200 !default;
-
 
 // Dropdowns
 // Dropdown menu container and contents.

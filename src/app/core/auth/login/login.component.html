@@ -3,10 +3,11 @@
   <ion-grid class="ion-no-padding">
     <ion-row class="ion-justify-content-center ion-no-padding">
       <ion-col size-sm="8" size-lg="6" size-xl="4" class="ion-align-self-center ion-no-padding ion-text-center">
-        <div class="login-header ion-text-center">
-          <ion-icon [src]="appIcon"></ion-icon>
-          <h1 class="ion-padding font-weight-500"> {{ 'Auth.Title' | translate }} </h1>
-          <h6 class="ion-padding"> {{ 'Auth.Description' | translate }} </h6>
+        <div class="login-header text-center">
+          <!-- <div [ngStyle]="{ 'background-image': 'url(assets/' + appIcon + ')' }"></div> -->
+          <img [src]="appIcon" class="max-h-70px" />
+          <h3 class="p-3 fs-1 fw-bold"> {{ 'Auth.Title' | translate }} </h3>
+          <h6 class="p-3 lh-xl"> {{ 'Auth.Description' | translate }} </h6>
           <!-- <ion-list *ngIf="isWeb" color="primary" lines="none" class="ion-no-padding">
             <app-language-selector type="select"> </app-language-selector>
           </ion-list> -->

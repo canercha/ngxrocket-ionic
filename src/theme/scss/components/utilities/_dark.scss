@@ -175,5 +175,16 @@
                 }
             }
         }
+
+        //
+        // Alert
+        //
+        .alert-radio-label {
+            color: $body-bg !important;
+        }
+
+        .alert-radio-inner {
+            border-color: $body-bg !important
+        }
     }
 }
